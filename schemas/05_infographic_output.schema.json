@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "b2b-infographic-storage",
+  "title": "B2B Infographic Storage Wrapper",
+  "description": "Agent 5 JSON (caption + image prompt) plus OpenAI PNG path.",
+  "type": "object",
+  "required": [
+    "day",
+    "format",
+    "working_title",
+    "post_text",
+    "image_generation_prompt",
+    "negative_prompt"
+  ],
+  "properties": {
+    "day": { "type": "string" },
+    "format": { "type": "string", "const": "Infographic" },
+    "working_title": { "type": "string" },
+    "pillar": { "type": "string" },
+    "content_role": { "type": "string" },
+    "product_grounded": { "type": "boolean" },
+    "post_text": {
+      "type": "string",
+      "minLength": 1,
+      "description": "LinkedIn caption from Agent 5 (same outline as graphic)"
+    },
+    "image_generation_prompt": { "type": "string", "minLength": 1 },
+    "negative_prompt": { "type": "string", "minLength": 1 },
+    "image_model": { "type": "string" },
+    "image_size": { "type": "string" },
+    "image_path": { "type": "string" },
+    "image_error": { "type": "string" },
+    "brand_dna_lock": { "type": "string" }
+  }
+}

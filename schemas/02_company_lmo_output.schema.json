@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "b2b-company-lmo-output",
+  "title": "B2B Company Page LMO Output",
+  "type": "object",
+  "required": [
+    "company_title",
+    "tagline",
+    "about_section",
+    "cta_used",
+    "revision_notes",
+    "handoff"
+  ],
+  "properties": {
+    "company_title": { "type": "string", "minLength": 1 },
+    "tagline": {
+      "type": "object",
+      "required": ["options", "recommended"],
+      "properties": {
+        "options": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "required": ["text", "style", "char_count"],
+            "properties": {
+              "text": { "type": "string", "minLength": 1, "maxLength": 120 },
+              "style": {
+                "type": "string",
+                "enum": [
+                  "professional",
+                  "keyword_search",
+                  "benefit_first",
+                  "modern",
+                  "punchy"
+                ]
+              },
+              "char_count": { "type": "integer", "minimum": 1, "maximum": 120 }
+            }
+          }
+        },
+        "recommended": { "type": "string", "minLength": 1, "maxLength": 120 }
+      }
+    },
+    "about_section": {
+      "type": "object",
+      "required": ["fixed", "char_count"],
+      "properties": {
+        "fixed": { "type": "string", "minLength": 1 },
+        "char_count": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "cta_used": { "type": "string" },
+    "revision_notes": { "type": "string" },
+    "handoff": {
+      "type": "object",
+      "required": [
+        "page_type",
+        "company_title",
+        "tagline_recommended",
+        "about_fixed",
+        "selected_growth_goal",
+        "confirmed_niche",
+        "confirmed_target_audience",
+        "confirmed_credibility_markers",
+        "confirmed_content_pillars",
+        "business_summary",
+        "case_study",
+        "allowed_formats",
+        "posting_cadence",
+        "things_to_avoid",
+        "semantic_blacklist",
+        "voice_notes",
+        "content_mode_constraints",
+        "brand_dna"
+      ],
+      "properties": {
+        "page_type": { "type": "string", "const": "company" },
+        "selected_growth_goal": {
+          "type": "string",
+          "enum": ["lead_generation", "personal_branding"]
+        },
+        "confirmed_content_pillars": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 4
+        },
+        "business_summary": {
+          "type": "object",
+          "required": [
+            "company_name",
+            "company_one_liner",
+            "product_or_offer_name",
+            "product_or_offer_description",
+            "industry_category",
+            "icp_or_buyer_persona",
+            "website"
+          ]
+        },
+        "case_study": {
+          "oneOf": [{ "type": "null" }, { "type": "object" }]
+        },
+        "allowed_formats": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "brand_dna": {
+          "type": "object",
+          "required": [
+            "primary_color",
+            "secondary_color",
+            "accent_color",
+            "heading_font",
+            "body_font",
+            "background_style"
+          ]
+        }
+      }
+    }
+  }
+}

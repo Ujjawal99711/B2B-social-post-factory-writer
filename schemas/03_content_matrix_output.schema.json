@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "b2b-content-matrix-output",
+  "title": "B2B Content Matrix Output",
+  "type": "object",
+  "required": ["week_summary", "weekly_content_matrix"],
+  "properties": {
+    "week_summary": {
+      "type": "object",
+      "required": [
+        "total_posts",
+        "posting_cadence",
+        "selected_positioning_mode",
+        "selected_growth_goal",
+        "pillars_covered",
+        "semantic_blacklist_status",
+        "product_grounded_post_count",
+        "format_counts",
+        "tone_balance"
+      ],
+      "properties": {
+        "total_posts": {
+          "type": "integer",
+          "const": 8
+        },
+        "selected_positioning_mode": {
+          "type": "string",
+          "enum": ["founder_plus_product", "founder_only"]
+        },
+        "selected_growth_goal": {
+          "type": "string",
+          "enum": ["lead_generation", "personal_branding"]
+        },
+        "product_grounded_post_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 8
+        },
+        "format_counts": {
+          "type": "object",
+          "required": ["text_post", "carousel", "infographic", "visual_post"],
+          "properties": {
+            "text_post": { "type": "integer", "const": 3 },
+            "carousel": { "type": "integer", "const": 2 },
+            "infographic": { "type": "integer", "const": 3 },
+            "visual_post": { "type": "integer", "const": 0 }
+          }
+        },
+        "tone_balance": {
+          "type": "object",
+          "required": ["positive_posts"]
+        }
+      }
+    },
+    "weekly_content_matrix": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "required": [
+          "day",
+          "pillar",
+          "content_role",
+          "working_title",
+          "short_title",
+          "format",
+          "mechanic",
+          "one_line_angle",
+          "save_trigger",
+          "credibility_anchor",
+          "tone",
+          "specific_practitioner_problem",
+          "product_grounded",
+          "growth_angle",
+          "proof_type",
+          "cta_style",
+          "post_situation",
+          "cta_type"
+        ],
+        "properties": {
+          "day": {
+            "type": "string",
+            "enum": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+          },
+          "content_role": {
+            "type": "string",
+            "enum": ["CORE", "BRIDGE", "EXPANSION"]
+          },
+          "product_grounded": {
+            "type": "boolean"
+          },
+          "growth_angle": {
+            "type": "string",
+            "enum": ["ideas_pov_story", "problem_solution_outcome"]
+          },
+          "proof_type": {
+            "type": "string",
+            "enum": ["experience_insight", "case_result_roi", "none"]
+          },
+          "cta_style": {
+            "type": "string",
+            "enum": ["none", "soft", "conversation"]
+          },
+          "post_situation": {
+            "type": "string",
+            "enum": [
+              "educational",
+              "problem_solution",
+              "case_study",
+              "framework",
+              "diagnostic",
+              "contrarian",
+              "before_after",
+              "roi_numbers",
+              "direct_offer",
+              "personal_authority"
+            ]
+          },
+          "cta_type": {
+            "type": "string",
+            "enum": [
+              "conversation",
+              "dm",
+              "problem_id",
+              "resource_dm",
+              "assessment_dm",
+              "discussion",
+              "outcome",
+              "commercial_dm",
+              "direct",
+              "soft_network",
+              "none"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "b2b-raw-output",
+  "title": "B2B RAW Input Structurer Output",
+  "type": "object",
+  "required": [
+    "extracted_profile",
+    "onboarding_data",
+    "business_data",
+    "credibility_markers",
+    "tools_and_technologies",
+    "semantic_blacklist",
+    "voice_fingerprint",
+    "brand_dna",
+    "case_study",
+    "agent_1_input"
+  ],
+  "properties": {
+    "extracted_profile": {
+      "type": "object",
+      "required": [
+        "name",
+        "founder_role_title",
+        "current_headline",
+        "current_about",
+        "current_company",
+        "current_work_experience",
+        "current_top_skills",
+        "follower_count",
+        "follower_tier",
+        "total_years_of_experience",
+        "domain_years_of_experience",
+        "years_building_current_business",
+        "past_roles"
+      ]
+    },
+    "onboarding_data": {
+      "type": "object",
+      "required": [
+        "selected_positioning_mode",
+        "selected_growth_goal",
+        "declared_niche",
+        "target_audience",
+        "real_numbers_wins",
+        "tools_they_use",
+        "voice_preference",
+        "things_to_avoid",
+        "profile_aspiration",
+        "business_goal_on_linkedin"
+      ],
+      "properties": {
+        "selected_positioning_mode": {
+          "type": "string",
+          "enum": ["founder_plus_product", "founder_only", ""]
+        },
+        "selected_growth_goal": {
+          "type": "string",
+          "enum": ["lead_generation", "personal_branding", ""]
+        }
+      }
+    },
+    "business_data": {
+      "type": "object",
+      "required": [
+        "company_name",
+        "company_one_liner",
+        "product_or_offer_name",
+        "product_or_offer_description",
+        "industry_category",
+        "icp_or_buyer_persona",
+        "geographic_market",
+        "company_stage_or_size_signals",
+        "key_differentiators"
+      ],
+      "properties": {
+        "website": {
+          "type": "string",
+          "description": "Exact company URL if stated in input; empty string if absent. Never invent."
+        }
+      }
+    },
+    "credibility_markers": {
+      "type": "object",
+      "required": ["primary", "secondary", "historical"]
+    },
+    "tools_and_technologies": {
+      "type": "object",
+      "required": ["primary", "secondary", "historical"]
+    },
+    "semantic_blacklist": {
+      "type": "array"
+    },
+    "voice_fingerprint": {
+      "type": "object"
+    },
+    "brand_dna": {
+      "type": "object"
+    },
+    "case_study": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["client_context", "problem", "approach", "outcome", "timeframe"]
+        }
+      ]
+    },
+    "case_studies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["client_context", "problem", "approach", "outcome", "timeframe"],
+        "properties": {
+          "source_file": { "type": "string" },
+          "client_context": { "type": "string" },
+          "problem": { "type": "string" },
+          "approach": { "type": "string" },
+          "outcome": { "type": "string" },
+          "timeframe": { "type": "string" }
+        }
+      }
+    },
+    "company_materials": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_file": { "type": "string" },
+          "summary": { "type": "string" },
+          "key_claims": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "company_images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "filename": { "type": "string" },
+          "caption": { "type": "string" },
+          "useful_for": { "type": "string" }
+        }
+      }
+    },
+    "agent_1_input": {
+      "type": "object",
+      "required": [
+        "name",
+        "selected_positioning_mode",
+        "selected_growth_goal",
+        "declared_niche",
+        "business_data",
+        "credibility_markers",
+        "semantic_blacklist",
+        "voice_fingerprint",
+        "brand_dna"
+      ]
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "b2b-lmo-output",
+  "title": "B2B LMO Output",
+  "type": "object",
+  "required": [
+    "confirmed_tier",
+    "selected_positioning_mode",
+    "selected_growth_goal",
+    "confirmed_niche",
+    "revision_notes",
+    "profile_optimization",
+    "skills",
+    "content_pillars",
+    "connection_pipelines",
+    "comment_target_queries",
+    "brand_dna",
+    "user_persona",
+    "handoff"
+  ],
+  "properties": {
+    "selected_positioning_mode": {
+      "type": "string",
+      "enum": ["founder_plus_product", "founder_only"]
+    },
+    "selected_growth_goal": {
+      "type": "string",
+      "enum": ["lead_generation", "personal_branding"]
+    },
+    "confirmed_niche": { "type": "string" },
+    "revision_notes": { "type": "string" },
+    "profile_optimization": {
+      "type": "object",
+      "required": ["headline", "about_section", "current_role_description"]
+    },
+    "skills": {
+      "type": "object",
+      "required": [
+        "cluster_1_core_niche",
+        "cluster_2_execution_tools",
+        "cluster_3_adjacent_niche",
+        "cluster_4_output_type",
+        "cluster_5_audience_context",
+        "top_3_priority",
+        "skills_to_remove"
+      ]
+    },
+    "content_pillars": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 4
+    },
+    "connection_pipelines": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "handoff": {
+      "type": "object",
+      "required": [
+        "confirmed_niche",
+        "selected_positioning_mode",
+        "selected_growth_goal",
+        "confirmed_target_audience",
+        "confirmed_content_pillars",
+        "content_mode_constraints",
+        "business_summary",
+        "allowed_formats",
+        "posting_cadence",
+        "connection_pipelines",
+        "comment_target_queries",
+        "user_persona",
+        "brand_dna",
+        "voice_fingerprint",
+        "semantic_blacklist"
+      ],
+      "properties": {
+        "selected_positioning_mode": {
+          "type": "string",
+          "enum": ["founder_plus_product", "founder_only"]
+        },
+        "selected_growth_goal": {
+          "type": "string",
+          "enum": ["lead_generation", "personal_branding"]
+        },
+        "allowed_formats": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "business_summary": {
+          "type": "object",
+          "required": [
+            "company_name",
+            "company_one_liner",
+            "product_or_offer_name",
+            "product_or_offer_description",
+            "industry_category",
+            "icp_or_buyer_persona"
+          ]
+        },
+        "case_study": {
+          "oneOf": [
+            { "type": "null" },
+            { "type": "object" }
+          ]
+        }
+      }
+    }
+  }
+}

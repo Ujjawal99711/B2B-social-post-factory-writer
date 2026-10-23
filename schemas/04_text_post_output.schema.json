@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "b2b-text-post-storage",
+  "title": "B2B Text Post Storage Wrapper",
+  "description": "Runner storage wrapper. The model outputs paste-ready text only; the runner wraps it into this object.",
+  "type": "object",
+  "required": ["day", "format", "working_title", "post_text"],
+  "properties": {
+    "day": { "type": "string" },
+    "format": { "type": "string", "const": "Text Post" },
+    "working_title": { "type": "string" },
+    "pillar": { "type": "string" },
+    "content_role": { "type": "string" },
+    "product_grounded": { "type": "boolean" },
+    "post_text": { "type": "string", "minLength": 1 }
+  }
+}

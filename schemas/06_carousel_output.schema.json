@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "b2b-carousel-output",
+  "title": "B2B Carousel Writer Output + Storage Wrapper",
+  "description": "Gemini carousel JSON plus runner storage fields (caption + per-slide PNG paths).",
+  "type": "object",
+  "required": [
+    "post_text",
+    "total_slides",
+    "total_inner_slides",
+    "carousel_strategy",
+    "slides"
+  ],
+  "properties": {
+    "day": { "type": "string" },
+    "format": { "type": "string", "const": "Carousel" },
+    "working_title": { "type": "string" },
+    "pillar": { "type": "string" },
+    "content_role": { "type": "string" },
+    "product_grounded": { "type": "boolean" },
+    "post_text": {
+      "type": "string",
+      "minLength": 1,
+      "description": "LinkedIn caption from Agent 6 (same outline as slides)"
+    },
+    "total_slides": { "type": "integer", "minimum": 3 },
+    "total_inner_slides": { "type": "integer", "minimum": 1 },
+    "carousel_strategy": {
+      "type": "object",
+      "required": ["assigned_mechanic", "routed_carousel_type", "strategy_reasoning"],
+      "properties": {
+        "assigned_mechanic": { "type": "string" },
+        "routed_carousel_type": { "type": "string" },
+        "strategy_reasoning": { "type": "string" }
+      }
+    },
+    "visual_dna_summary": {
+      "type": "object",
+      "properties": {
+        "colors": { "type": "string" },
+        "typography": { "type": "string" },
+        "background_style": { "type": "string" }
+      }
+    },
+    "hook_type": { "type": "string" },
+    "hook_reason": { "type": "string" },
+    "cta_goal": { "type": "string" },
+    "cta_reason": { "type": "string" },
+    "truncated_note": { "type": "string" },
+    "image_model": { "type": "string" },
+    "image_size": { "type": "string" },
+    "slides": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "slide_number",
+          "slide_role",
+          "headline",
+          "body_text",
+          "counter",
+          "image_gen_prompt"
+        ],
+        "properties": {
+          "slide_number": { "type": "integer", "minimum": 1 },
+          "slide_role": {
+            "type": "string",
+            "enum": ["Cover", "Content", "CTA"]
+          },
+          "headline": { "type": "string" },
+          "body_text": { "type": "string" },
+          "counter": { "type": "string" },
+          "image_gen_prompt": { "type": "string", "minLength": 1 },
+          "image_path": { "type": "string" },
+          "image_error": { "type": "string" }
+        }
+      }
+    }
+  }
+}

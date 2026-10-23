@@ -1,0 +1,5 @@
+Client / product context: OutSpark (CoolBoots portfolio) AI career growth platform
+Problem: Professionals struggle to cut through job-market clutter with generic resumes and unprepared interviews.
+Approach: Built AI-assisted resume creation, LinkedIn optimization, interview preparation, and career intelligence into a consumer career OS.
+Outcome: 200k+ paid users within the first year of launch.
+Timeframe: First 12 months after launch

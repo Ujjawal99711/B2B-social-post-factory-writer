@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "b2b-company-content-matrix-output",
+  "title": "B2B Company Content Matrix Output",
+  "type": "object",
+  "required": ["week_summary", "weekly_content_matrix"],
+  "properties": {
+    "week_summary": {
+      "type": "object",
+      "required": [
+        "total_posts",
+        "posting_cadence",
+        "page_type",
+        "selected_growth_goal",
+        "pillars_covered",
+        "semantic_blacklist_status",
+        "product_grounded_post_count",
+        "company_post_type_counts",
+        "format_counts",
+        "tone_balance"
+      ],
+      "properties": {
+        "total_posts": { "type": "integer", "const": 4 },
+        "page_type": { "type": "string", "const": "company" },
+        "selected_growth_goal": {
+          "type": "string",
+          "enum": ["lead_generation", "personal_branding"]
+        },
+        "product_grounded_post_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "company_post_type_counts": {
+          "type": "object",
+          "required": [
+            "educational_howto",
+            "case_study",
+            "behind_the_scenes",
+            "company_news"
+          ],
+          "properties": {
+            "educational_howto": { "type": "integer", "minimum": 0 },
+            "case_study": { "type": "integer", "minimum": 0 },
+            "behind_the_scenes": { "type": "integer", "minimum": 0 },
+            "company_news": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "format_counts": {
+          "type": "object",
+          "required": ["text_post", "carousel", "infographic", "visual_post"],
+          "properties": {
+            "text_post": { "type": "integer", "const": 0 },
+            "carousel": { "type": "integer", "const": 2 },
+            "infographic": { "type": "integer", "const": 2 },
+            "visual_post": { "type": "integer", "const": 0 }
+          }
+        },
+        "tone_balance": {
+          "type": "object",
+          "required": ["positive_posts"]
+        }
+      }
+    },
+    "weekly_content_matrix": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "day",
+          "pillar",
+          "content_role",
+          "company_post_type",
+          "working_title",
+          "short_title",
+          "format",
+          "mechanic",
+          "one_line_angle",
+          "save_trigger",
+          "credibility_anchor",
+          "tone",
+          "specific_practitioner_problem",
+          "product_grounded",
+          "growth_angle",
+          "proof_type",
+          "cta_style",
+          "cta_type"
+        ],
+        "properties": {
+          "day": {
+            "type": "string",
+            "enum": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+          },
+          "content_role": {
+            "type": "string",
+            "enum": ["CORE", "BRIDGE", "EXPANSION"]
+          },
+          "company_post_type": {
+            "type": "string",
+            "enum": [
+              "educational_howto",
+              "case_study",
+              "behind_the_scenes",
+              "company_news"
+            ]
+          },
+          "format": {
+            "type": "string",
+            "enum": ["Infographic", "Carousel"]
+          },
+          "product_grounded": { "type": "boolean" },
+          "growth_angle": {
+            "type": "string",
+            "enum": ["ideas_pov_story", "problem_solution_outcome"]
+          },
+          "proof_type": {
+            "type": "string",
+            "enum": ["experience_insight", "case_result_roi", "none"]
+          },
+          "cta_style": {
+            "type": "string",
+            "enum": ["none", "soft", "conversation"]
+          },
+          "cta_type": {
+            "type": "string",
+            "enum": ["visit_website", "contact_team", "follow_page", "none"]
+          }
+        }
+      }
+    }
+  }
+}

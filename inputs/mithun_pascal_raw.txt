@@ -1,0 +1,298 @@
+=== ONBOARDING / POSITIONING ===
+selected_positioning_mode: founder_only
+selected_growth_goal: personal_branding
+declared_niche: AI knowledge worker for public equity investors and investment managers
+target_audience: Investment managers and public equity investors who need faster, more accurate analysis of unstructured research data
+business_goal_on_linkedin: Build founder authority while generating demo conversations for Pascal AI
+voice_preference: professional, product-literate, clear and specific
+things_to_avoid: hype without proof, invented metrics, invented client names, filling in redacted figures
+profile_aspiration: Known as the founder building Pascal AI, an AI knowledge worker for investment management
+
+=== LINKEDIN PROFILE ===
+Contact
+www.linkedin.com/in/mithunmadhusudan (LinkedIn)
+mithun-madhusudan.notion.site/Mithun-s-Linktreee6f6955e15f24e839b6b950ebb051181 (Personal)
+theindianpivot.substack.com/ (Blog)
+theproductroadmap.substack.com/ (Personal)
+
+Mithun Madhusudan
+Founder, Pascal AI | Building in AI + Investing
+New Delhi, Delhi, India
+
+Top Skills
+Product Management
+Software Product Management
+User Experience (UX)
+
+Languages
+Malayalam (Professional Working)
+Hindi (Native or Bilingual)
+
+Publications
+Social Media In Politics
+
+Summary
+Mithun is a product management leader with 10+ years of
+experience in building technology products, focused on the context
+of the Indian internet user.
+He is currently building Pascal AI, an AI knowledge worker for
+investment management. Pascal reimagines investing workflows,
+with AI at its core, and is built ground up for the complexities of
+investment research - from understanding unstructured data to the
+creating complex models.
+He has built and managed product management teams in ecommerce, professional networking, social media, short video (xx
+mn daily active users), live audio chat (xx mn USD annual revenue,
+AI content feeds. Through this, he has delivered large outcomes
+in engagement, retention, & revenue (most recently at Apna and
+ShareChat)
+He is excited by the potential that software products have in making
+a difference to the lives of the next 100 million internet users in India.
+Always open to talk to founders, operators, and investors working
+in India's tech/product ecosystem and share notes. Find me at
+myth[dot]12887[at]gmail.com
+I also writing about the product ecosystem in India
+theindianpivot.substack.com and on product at
+theproductroadmap.substack.com
+
+Experience
+Pascal AI Labs
+Founder
+May 2024 - Present (2 years 6 months)
+Cooking.
+
+apna
+Head of Product - Candidate Engagement
+October 2021 - March 2023 (1 year 6 months)
+Remote
+Leading the candidate engagement charter at Apna, a professional network
+for the rising workforce. Managing a team of product managers to drive
+engagement and retention.
+I spent a lot of time at ShareChat envious of the power of a people network
+- and saw the opportunity at Apna to build a people powered network which
+would help the emerging workforce (Bharat consumer).
+To this end I built multiple products
+* Digital Professional Identity through an profile valuable to recruiters and the
+network
+* Core of the professional network - People You May Know (machine learning
+based people recommendations)
+* Content Feed - Personalised content recommended by a data science
+algorithm. Managed the AI product team.
+* Job Referral - Use your professional network to identify unlisted/new
+opportunities. Enabled through a one click referral product tailor made for this
+audience. Increased chat volume 2x.
+People Management
+* Team of ~15 product managers and designers, supported by an engineering
+team of ~40
+
+ShareChat
+Director of Product Management
+August 2018 - October 2021 (3 years 3 months)
+Bengaluru Area, India
+What an absolutely wild ride. 5mn to 50mn daily active users, 0 to xx cr per
+month in live audio virtual gifting revenue, and launching a market leader short
+video product overnight.
+I had more highlights in 3 years than most people have in 30. Experienced
+absolutes - from the troughs of despair to the highs of success. Went from an
+IC PM to building and leading a fantastic team of product leaders. I had to build
+a lot of my own frameworks from first principles - building consumer product in
+India for a Tier 2 audience is very very different. Personal thesis of exponential
+learning played out massively. Extremely grateful for the opportunity and the
+team.
+At ShareChat I helped scale the product to 100mn+ monthly active users.
+ShareChat is used by 1 in 5 of internet users in India.
+I led a team of 20+ GPMs, PMs, and analysts, and ran 5 product pods.
+I also built India's largest live audio platform specifically for the India 2
+audience and grew it from from 0 to xx mn USD GMV in 12 months.
+A snapshot of products I worked on -
+* AI Recommendation systems
+* Live Audio chatrooms (largest audio product in India)
+* Content creation tools and funnels
+* Creator acquisition and retention
+* Notifications (xx bn notifications sent daily)
+* Search and Discovery
+* Profile
+* ShareChat TV (Long form video within ShareChat)
+and much more.
+https://www.livemint.com/companies/start-ups/indias-sharechat-raises-266-million-for-valuation-of-3-7-billion-11639635557451.html
+https://economictimes.indiatimes.com/tech/technology/sharechats-virtualgifting-earns-50-million/articleshow/94689816.cms?from=mdr
+
+HolidayIQ.com
+Product Manager (Growth, Personalization, Mobile, Video Reviews, Platform)
+April 2016 - April 2018 (2 years 1 month)
+Bengaluru Area, India
+Got my first shot at structured product management. Spent two years here
+honing my craft, understanding and building for the 'inspiration' part of a
+travellers customer journey. Managed a couple of junior PMs, built interesting
+products in content, video, ad-tech.
+- Programmatic CRM: Built content personalization engine to deliver relevant
+travel content to 4 million travelers. Involved user journey creation, Facebook
+integration & marketing, Email marketing, & content mining from reviews.
+- Video: My team pioneered user generated Video Reviews as a new content
+format in the travel space. I was responsible for both review generation and
+review consumption metrics. Being an early leader in Video content meant that
+I had the chance to see first hand the impact of visual content on all metrics.
+- Reviews Platform: Led relationship with multiple partners to collect &
+distribute HolidayIQ review content.
+- Brand Solutions: Responsible for building out products to amplify HolidayIQ’s
+Brand Solutions business.
+Eventually saw my learning plateau and moved. By this time I was sure of
+consumer product, and was looking to move into a sector which was just
+opening up. That's when ShareChat happened - content + product + large
+unaddressed base + rapid growth.
+
+Cubeit.io
+Growth
+February 2015 - April 2016 (1 year 3 months)
+Bengaluru Area, India
+What Cubeit does - https://medium.com/cubeit-curate-your-content/obituarythe-folder-8d0f5021edfd
+As part of a small team at an Accel Partners funded startup, I helped ideate
+and launch a content first mobile first app which enabled consumption of
+diverse forms of content on the mobile (think of how youtube links show in
+WhatsApp as content cards). As Growth lead I worked on innovative modes
+of customer acquisition, generating user feedback through AB tests, focus
+groups, and interviews. Cubeit was eventually acquired by Myntra.
+Great experience building a 0-1 product, launching, and failing. By now I was
+a 100% sure I wanted to work as a product manager, but in a slightly more
+structured organisation. On to the next!
+
+Zoomcar
+Marketing and Business Development
+September 2014 - January 2015 (5 months)
+Bengaluru Area, India
+At Zoomcar, a Sequoia/Ford funded self drive car rental startup, I was
+responsible for marketing and business development, my first customer facing
+role! Ran around setting up parking locations for our cars, helping launch new
+cities, working on marketing collateral, and a bunch of other generalist stuff.
+Also - cut my teeth in product, working with the engineering and design team to
+build products for marketing automation.
+Another step towards figuring out what I really wanted to do with my career.
+Outcome: Startups = Good, Product = Great!
+I quit in 6 months to join a VC funded 5 member team building a content
+product out of a shared apartment (!)
+
+Flipkart.com
+Supply Chain Finance
+April 2014 - September 2014 (6 months)
+Bangalore
+I joined Flipkart as a management trainee in Supply Chain Finance, and was
+part of the team which managed warehouse finance for Flipkart. This involved
+tracking costs for all warehouses across India, and actively analyzing them
+to recommend actions to management. I was also part of the supply chain
+strategy team where we built a business case for pan India expansion of
+Flipkart's fulfilment network. Had an opportunity to work on the initial structure
+of Flipkart First.
+Flipkart was my first exposure to a fast growing startup, and I liked what I
+saw! But after 6 months I was pretty sure I didn't want to spend my career
+neck deep in excel sheets (this was why I stayed away from banking post
+MBA). Took a risk and quit in 6 months to join an early stage startup in a more
+customer facing role.
+
+HSBC
+Analyst, Balance Sheet Management
+April 2013 - May 2013 (2 months)
+Summer Intern at Balance Sheet Management (Treasury). Worked with
+internal analytics team on weekly regional projections, and with the
+Investments desk on building a portfolio analytics suite.
+Did a bunch of excel and number crunching, explored Hong Kong, and then
+realised that banking was not for me. So now what?
+
+Barclays Capital
+Analyst
+July 2010 - June 2012 (2 years)
+Singapore
+Separately - my first job was in Singapore, for someone who had never
+traveled abroad this was a dream come true! Spent 2 years learning a little bit
+about banking and a lot about why tech is important.
+Details
+Analyst, US Fixed Income Technology: I was part of a team of engineers
+building and maintaining an in house application which acts as a hub between
+Fixed Income trading applications and a third party vendor application. My
+team was the touch point for all Fixed Income trades done in the US market
+on US dollar securities. My role involved analyzing requests for trade/system
+related information from traders and the middle office, and providing timely and
+accurate solutions. Tools: SQL, Perl, UNIX.
+
+Grassroutes
+Editorial Team
+June 2010 - June 2012 (2 years 1 month)
+Combining both my passion for writing, and a desire to work in the social
+sector, I lead the editorial team at Grassroutes. From the Grassroutes
+website - Grassroutes is a Fellowship Program which enables outstanding
+and passionate youth to travel across rural India, discover and work with
+changemakers, do their bit to change the world and inspire more youth into
+social action.
+The editorial team works with Grassroutes fellows to hone their story telling
+skills, enabling them to get potent, human stories out to the general public,
+and also facilitates the spread of these stories through mainstream and social
+media.
+
+The Scholars' Avenue, Campus newspaper IIT Kharagpur
+Editor
+September 2008 - May 2010 (1 year 9 months)
+Wrote a bunch of articles for a student run newspaper, where we actually
+printed and distributed hard copies throughout campus. Yes, I'm that old. Talk
+to me about the death of newspaper advertising.
+Led a team of 30 that published 5000 copies of the campus newspaper every
+fortnight.
+- Revamped the website and mailing list, resulting in our issues reaching over
+5000 alumni worldwide, and the website averaging 10,000 hits a month.
+- Initiated content collaboration with campus newspapers in IIT Bombay and
+Delhi, and with the technology magazine Digit.
+- Comprehensive coverage of campus events has led to reports from The
+Scholars’ Avenue being quoted in The Indian Express and The Hindustan
+Times.
+- First hand experience in newspaper layout using CorelDraw and Photoshop
+
+Barclays Capital
+Summer Analyst
+May 2009 - July 2009 (3 months)
+Analyst in the Asia Pacific IT COO's office. The team's work dealt primarily with
+administration and reporting for all Technology teams in Asia Pacific.
+
+Barclays Capital
+Summer Analyst
+May 2008 - June 2008 (2 months)
+Developer for Compliance Technology
+
+Indian Statistical Institute
+Summer Intern
+May 2007 - July 2007 (3 months)
+Worked under Prof. Sanghamitra Das on a Government of India Sponsored
+Project to assess the environmental impact of poverty using evidence from
+firewood use in rural India. Recommendations were acknowledged in the
+publication.
+
+Education
+Indian Institute of Management, Bangalore
+PGDM, Business Administration and Management, General · (2012 - 2014)
+Louvain School of Management
+Student Exchange Sep 2013-Dec 2013, Finance, General · (2013 - 2013)
+Indian Institute of Technology, Kharagpur
+Integrated M.Sc., Mathematics and Computing · (2005 - 2010)
+Don Bosco School, New Delhi
+High School, Science · (1993 - 2005)
+
+=== COMPANY PAGE: Pascal AI Labs ===
+Pascal AI Labs
+AI Agents for Investment Managers
+Technology, Information and Internet
+New York
+3K followers
+11-50 employees
+
+Overview
+Pascal is an AI knowledge worker for public equity investors. Pascal streamlines investment analysis by processing vast amounts of unstructured data, such as earnings reports, news articles, and internal documents like investment memos. It identifies key themes, performs analysis, and tracks trends over time to provide actionable insights. Pascal enhances accuracy and speeds up the investment decision-making process. Initially focused on automating investment workflows, Pascal aims to evolve into an independent asset class, offering investors a unique edge in generating better returns through AI-driven insights.
+
+If you'd like a demo, please DM on LinkedIn with your email, phone number and use case.
+
+Website: www.pascalailabs.com
+Industry: Technology, Information and Internet
+Company size: 11-50 employees
+19 associated members
+Headquarters: New York
+Founded: 2024
+Type: Privately Held
+Locations: United States Primary New York
+
+=== PAST POSTS ===
+(none provided)
